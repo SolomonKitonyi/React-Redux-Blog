@@ -1,5 +1,7 @@
 import {combineReducers} from 'redux';
-
+import postsReducer from './postsReducer';
+import UsersReducer from './UsersReducer';
 export default combineReducers({
-    myname : ()=> 'Hi there',
+    posts:postsReducer,
+    users: UsersReducer
 });
